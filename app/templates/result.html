@@ -7,6 +7,13 @@
 <body>
     <h1>Image Result</h1>
     <img src="{{ url_for('main.show_image', filename=filename) }}" alt="Uploaded Image">
-    <a href="{{ url_for('main.process_image_route', filename=filename) }}">Process Image</a>
+    <div>
+        <a href="{{ url_for('main.process_grayscale', filename=filename) }}">Convert to Grayscale</a>
+        <a href="{{ url_for('main.process_resize', filename=filename) }}">Resize Image</a>
+        <a href="{{ url_for('main.process_rotate', filename=filename) }}">Rotate Image</a>
+        <a href="{{ url_for('main.process_edges', filename=filename) }}">Edge Detection</a>
+        <a href="{{ url_for('main.process_blur', filename=filename) }}">Blur Image</a>
+        <a href="{{ url_for('main.process_adjust', filename=filename) }}">Adjust Brightness/Contrast</a>
+    </div>
 </body>
 </html>
