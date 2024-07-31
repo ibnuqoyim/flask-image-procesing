@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, send_f
 from werkzeug.utils import secure_filename
 from .utils import process_image
 
-app = Blueprint('app', __name__)
+bp = Blueprint('main', __name__)
 
 @bp.route('/')
 def index():
