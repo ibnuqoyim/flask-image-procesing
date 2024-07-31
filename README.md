@@ -59,13 +59,18 @@ image_processing_app/
 3. **Activate the virtual environment:**
     - Windows:
 
+    ```sh
+    venv\Scripts\activate
     ```
-    venv\Scripts\activate```
 
     - MacOS/Linux:
-    ```source venv/bin/activate```
+    ```sh
+    source venv/bin/activate
+    ```
+
 4. **Install dependencies:**
     ```pip install -r requirements.txt```
+
 
 5. **Run the application:**
     ```python run.py```
