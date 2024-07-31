@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Result</title>
+</head>
+<body>
+    <h1>Image Result</h1>
+    <img src="{{ url_for('main.show_image', filename=filename) }}" alt="Uploaded Image">
+    <a href="{{ url_for('main.process_image_route', filename=filename) }}">Process Image</a>
+</body>
+</html>
